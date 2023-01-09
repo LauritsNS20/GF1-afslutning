@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/billedere/Byens_hus_web-1.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button"> Forside</a>
+    <a href="#menu" class="w3-bar-item w3-button"> Booking af lokal</a>
+    <a href="#about" class="w3-bar-item w3-button"> Om byens hus</a>
+    <a href="#myMap" class="w3-bar-item w3-button"> Kontakt</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Åben fra 10.00 til 15.00</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Roskilde<br>Byens Hus</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Se hvors lokaler</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">lokaler til lån</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">små</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">mellem</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Storer</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Dagligstuen</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 6 personer </p>
+      <hr>
+   
+      <h1><b>Frirummet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 4 personer</p>
+      <hr>
+      
+      <h1><b>Mellemrummet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 8 personer</p>
+      <hr>
+
+      <h1><b>Tidsrummet </b> <span class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 8 personer</p>
+      <hr>
+
+      <h1><b>rummet</b> <span  class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 6 personer</p>
+      <hr>
+
+      <h1><b>det lille rum</b> <span  class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lille lokale med plads til 4 personer</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Tankerummet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">200kr</span></h1>
+      <p class="w3-text-grey">et lokale med plads til 10 personer</p>
+      <hr>
+   
+      <h1><b>Forsamlingen </b> <span class="w3-right w3-tag w3-dark-grey w3-round">300kr</span></h1>
+      <hr><p class="w3-text-grey">et lokale med plads til 20 personer</p>
+
+      
+      <h1><b>Orangeriet</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> 300kr</span></h1>
+      <p class="w3-text-grey">et lokale med plads til 24 personer</p>
+      <hr>
+
+      <h1><b>Verdensrummet</b> <span class="w3-right w3-tag w3-dark-grey w3-round">300kr</span></h1>
+      <p class="w3-text-grey">et lokale med plads til 24 personer</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Under Gulvtæppet </b> <span  class="w3-right w3-tag w3-dark-grey w3-round">300kr</span></h1>
+      <p class="w3-text-grey">et stort lokale med plads til 30 personer</p>
+      <hr>
+   
+      <h1><b>Den Gamle Byrådssal </b> <span class="w3-right w3-tag w3-dark-grey w3-round">600kr</span></h1>
+      <p class="w3-text-grey">et stort lokale med plads til 80 personer</p>
+      <hr>
+      
+      
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Om byens hus</h1>
+    <p>Byens hus er sat i verden som et kommunalt demokratihus. Her kan du låne lokaler, møde andre, fordybe dig, blive inspireret og bygge løsninger. Du er en vigtig del af demokratiet.</p>
+    <p><strong>Hvad er Byens hus?</strong> Dit moderne medborgerhus
+      Som medborger kan du låne lokaler i Byens hus til almennyttige formål og afprøvning af nye ideer. Du kan selvfølgelig også deltage i aktiviteter, som dine med-borgere har planlagt. Har du et kommercielt formål eller bor udenfor Roskilde Kommune, skal du betale lokaleleje.
+      Her er både plads til planlagte og tilfældige møder mellem mennesker: Større borgermøder, midlertidige udstillinger, intime netværksmøder, forsøg med nye initiativer og klassisk foreningsarbejde.</p>
+    <p>Et godt sted at starte og et trygt sted at teste</p>
+    <img src="billedere/det-gamle-raadhus.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Åbnings og lukketider</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mandag - 10:00-15:00</p>
+        <p>Tirsdag - 10:00-15:00 </p>
+        <p>Onsdag - 10:00-15:00</p>
+        <p>Torsdag - 10:00-15:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Fredag - lukket</p>
+        <p>Lørdag - lukket</p>
+        <p>Søn-/helligdage - lukket</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="3333333333333333333" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Adresse: Stændertorvet 1 4000 Roskilde:  </p>
+    <p>Telefonnummer: 46315199 </p>
+    <p>Facebook  </p>
+    <p>Instagram</p>
+    <p>Linkedin</p>
+    <p><span class="w3-tag"></span> </p>
+    <p class="w3-xxlarge"><strong>her kan du reserver et lokale</strong> </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Navn" required name="Navn"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Hvor mange personer" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Dato og tid" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Lokale " required name="Besked"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">Send besked</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
